@@ -48,3 +48,18 @@ The script can also be run directly with node if choosing not to perform the lin
 
 ```bash
 node photo-album <albumid>
+```
+
+## Testing
+
+To perform unit testing, run
+
+```bash
+npm test
+```
+
+or
+
+```bash
+yarn test
+```
