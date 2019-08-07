@@ -28,10 +28,7 @@ program
     }
     catch(err) {
       console.error(
-        chalk.red('Unable to complete request.')
-      );
-      console.error(
-        chalk.red(err)
+        chalk.red('Unable to complete request.', err)
       );
     }
   });
@@ -40,7 +37,7 @@ program.parse(process.argv);
 
 if (process.argv.slice(2).length !== 1) {
   console.error(
-    chalk.red('error: invalid number of arguments')
+    chalk.red('Error: Invalid number of arguments')
   );
   program.help();
 }
